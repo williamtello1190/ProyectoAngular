@@ -23,8 +23,11 @@
 
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav><!-- End Nav Menu -->
-
-    <a class="btn-getstarted" href="index.html#about">Empezar</a>
+    <div>
+      <a class="btn-getstarted" href="index.html#about">Empezar</a>
+      <a href="#" id="whatsapp" class="whatsapp"><img src="..\assets\img\icon-whatsapp.png" width="40px" height="40px"></a>
+    </div>
+    
 
   </div>
 </header><!-- End Header -->
@@ -878,23 +881,23 @@
         </div>
 
         <div class="col-lg-6">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+          <form class="php-email-form" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Nombre" required>
+                <input type="text" id="nombre" name="name" class="form-control" placeholder="Nombre" required>
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                <input type="email" id="email" class="form-control" name="email" placeholder="Email" required>
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
+                <input type="text" id="subject" class="form-control" name="subject" placeholder="Asunto" required>
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Mensaje" required></textarea>
               </div>
 
               <div class="col-md-12 text-center">
@@ -928,10 +931,11 @@
         </a>
         <p>Fomentando la mejor experiencia en soluciones generales</p>
         <div class="social-links d-flex mt-4">
-          <a href=""><i class="bi bi-twitter"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a><i class="bi bi-twitter" (click)="abrirLink('https://www.google.com/')"></i></a>
+          <a><i class="bi bi-facebook" (click)="abrirLink('https://www.google.com/')"></i></a>
+          <a><i class="bi bi-instagram" (click)="abrirLink('https://www.instagram.com/juniormecar')"></i></a>
+          <a><i class="bi bi-linkedin" (click)="abrirLink('https://www.google.com/')"></i></a>
+          <a><i class="bi bi-whatsapp" (click)="abrirLink('https://api.whatsapp.com/send?phone=51961830561')"></i></a>
         </div>
       </div>
 
@@ -987,7 +991,7 @@
 
   <!-- Scroll Top Button -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <!-- <a href="#" id="whatsapp" class="whatsapp d-flex align-items-center justify-content-center" src="..\assets\img\icon-whatsapp.png"></a> -->
   <!-- Preloader -->
   <div id="preloader">
     <div></div>

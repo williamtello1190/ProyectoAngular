@@ -720,6 +720,7 @@ section {
   color: rgba(var(--default-color-rgb), 0.5);
   margin-right: 10px;
   transition: 0.3s;
+  cursor:pointer;
 }
 
 .footer .social-links a:hover {
